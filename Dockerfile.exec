@@ -1,0 +1,20 @@
+# Dockerfile for Chef recipe kitchen test environment setup
+#
+# VERSION 0.1
+# AUTHOR  Ruifeng Ma (ruifengm@sg.ibm.com)
+# LAST MODIFIED 2017-May-02
+
+# This file creates a container that inherits from the sla-kitchen
+# image built through the default Dockerfile to execute the kitchen tests
+# found within.
+
+
+FROM sla-dtr.sby.ibm.com/dev-user/sla-kitchen-base:latest
+# FROM sla-kitchen-base:latest
+MAINTAINER Ruifeng Ma "ruifengm@sg.ibm.com"
+
+# Copy source files
+COPY . /home/chef/kitchen
+
+# Start kitchen test and reporting
+CMD /bin/bash /home/chef/kitchen/startup.sh

@@ -1,0 +1,4 @@
+# Endpoint servers for kitchen test to be added to the /etc/hosts file of the docker container
+
+10.91.118.195    sla-d-cms-eptrh7-sjc01.sdad.sl.dst.ibm.com
+# 9.51.154.139    sla-d-cms-eptrh7-sjc01.sdad.sl.dst.ibm.com

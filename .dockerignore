@@ -1,0 +1,3 @@
+# Ignore files not to be put into the docker build context
+
+kitchen_build_deploy_jenkins.sh
